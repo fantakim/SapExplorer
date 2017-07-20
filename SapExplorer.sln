@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SapExplorer", "SapExplorer\SapExplorer.csproj", "{536A3CEF-DAD1-4EEA-9FE5-C6403C4169F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SapExplorer.Tests", "SapExplorer.Tests\SapExplorer.Tests.csproj", "{D0E9138B-74BA-4FB0-A8C8-A13859AECF43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SapExplorer.Web", "SapExplorer.Web\SapExplorer.Web.csproj", "{2D3894D9-6262-4D1C-9E07-430B79E9B361}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{536A3CEF-DAD1-4EEA-9FE5-C6403C4169F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{536A3CEF-DAD1-4EEA-9FE5-C6403C4169F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{536A3CEF-DAD1-4EEA-9FE5-C6403C4169F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{536A3CEF-DAD1-4EEA-9FE5-C6403C4169F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0E9138B-74BA-4FB0-A8C8-A13859AECF43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0E9138B-74BA-4FB0-A8C8-A13859AECF43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0E9138B-74BA-4FB0-A8C8-A13859AECF43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0E9138B-74BA-4FB0-A8C8-A13859AECF43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D3894D9-6262-4D1C-9E07-430B79E9B361}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D3894D9-6262-4D1C-9E07-430B79E9B361}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D3894D9-6262-4D1C-9E07-430B79E9B361}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D3894D9-6262-4D1C-9E07-430B79E9B361}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://chunjoo.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SapExplorer\\SapExplorer.csproj
+		SccProjectName1 = SapExplorer
+		SccLocalPath1 = SapExplorer
+		SccProjectUniqueName2 = SapExplorer.Tests\\SapExplorer.Tests.csproj
+		SccProjectName2 = SapExplorer.Tests
+		SccLocalPath2 = SapExplorer.Tests
+		SccProjectUniqueName3 = SapExplorer.Web\\SapExplorer.Web.csproj
+		SccProjectName3 = SapExplorer.Web
+		SccLocalPath3 = SapExplorer.Web
+	EndGlobalSection
+EndGlobal
