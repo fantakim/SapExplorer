@@ -72,14 +72,7 @@
                 {
                     <tr id="@p.Name" style="display:none">
                         <td colspan="6">
-                            <h4>
-                                Structure name: @p.Structure.Name
-                                @if (p.DataType.Equals("TABLE") && p.Direction.Equals("TABLES"))
-                                {
-                                    <button data-id="@p.Structure.Name" class="btn btn-info table-view">View Table</button>
-                                }
-                            </h4>
-
+                            <h4>Structure name: @p.Structure.Name</h4>
                             <table class="table table-striped table-bordered table-hover">
                                 <tr>
                                     <th>Name</th>
@@ -109,16 +102,6 @@
 </div>
 <script>
     $(function () {
-        $("#SelectedDestination option").each(function (index) {
-            var text = $(this).text();
-
-            $.each(re, function (i, obj) {
-                text = text.replace(obj.regex, obj.value);
-            });
-
-            $(this).text(text);
-        });
-
         $("#SearchFunction").autocomplete({
             serviceUrl: "@Url.Action("GetFunctions")",
             onSearchStart: function (params) {
@@ -138,42 +121,5 @@
 
             $("#" + target).toggle();
         });
-
-        $(".table-view").click(function () {
-            var d = $("#SelectedDestination").val();
-            var s = $(this).data("id");
-            var url = "Read/" + d + "/" + s;
-            window.open(url, "_blank");
-        });
-
-        $(".codecom-view").click(function () {
-            var d = $("#SelectedDestination").val();
-            var f = $("#SearchFunction").val();
-            var s = $(this).data("id");
-            var url = "CodeCom/" + d + "/" + f + "/" + s;
-        });
-    });
-
-    var dic = {
-        "AEKYUNG_DEV": "애경산업-개발",
-        "AEKYUNG_REAL": "애경산업-운영",
-        "AKBB_DEV_SAP": "제주항공-개발",
-        "AKBB_JJP_SAP": "제주항공-운영",
-        "AKBB_JJQ_SAP": "제주항공-검증",
-        "AKB_DEV_SAP": "애경화학-개발",
-        "AKB_REAL_SAP": "애경화학-운영",
-        "AKC_DEV_SAP": "AK켐텍-개발",
-        "AKC_REAL_SAP": "AK켐텍-운영",
-        "AKP_DEV_SAP": "애경유화-개발",
-        "AKP_REAL_SAP": "애경유화-운영",
-        "AKIS_ERP": "AKIS-운영",
-        "AKIS_ERP_DEV": "AKIS-개발"
-    };
-
-    var re = $.map(dic, function (v, k) {
-        return {
-            regex: new RegExp('\\b' + k + '\\b', 'g'),
-            value: v
-        };
     });
 </script>
